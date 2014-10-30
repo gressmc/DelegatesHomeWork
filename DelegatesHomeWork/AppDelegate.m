@@ -111,12 +111,12 @@
     }
     
     for (Patient* patient in array) {
-        patient.doctorSet = [NSMutableDictionary new];
+        patient.doctorSet = [NSMutableSet new];
         switch (patient.assess) {
             case BadDoc:
-                [patient.doctorSet setObject:@"BadDoc" forKey:[NSString stringWithFormat:@"%@", patient.delegate]];
+                [patient.doctorSet addObject:[NSString stringWithFormat:@"%@", patient.delegate]];
                 for (Doctor* doc in clinic) {
-                    if (![patient.doctorSet objectForKey:[NSString stringWithFormat:@"%@", doc]]) {
+                    if (![patient.doctorSet containsObject:[NSString stringWithFormat:@"%@", doc]]) {
                         patient.delegate = doc;
                     }
                 }
@@ -125,6 +125,24 @@
                 break;
         }
     }
+    
+    /*
+     for (Patient* patient in array) {
+     patient.doctorSet = [NSMutableDictionary new];
+     switch (patient.assess) {
+     case BadDoc:
+     [patient.doctorSet setObject:@"BadDoc" forKey:[NSString stringWithFormat:@"%@", patient.delegate]];
+     for (Doctor* doc in clinic) {
+     if (![patient.doctorSet objectForKey:[NSString stringWithFormat:@"%@", doc]]) {
+     patient.delegate = doc;
+     }
+     }
+     break;
+     default:
+     break;
+     }
+     }
+     */
     
     for (Patient* patient in array) {
         if (patient.temperature >36.8 || [patient pain]) {

@@ -29,7 +29,7 @@ typedef enum{
 @property(assign,nonatomic) BOOL neck;
 
 @property(assign,nonatomic) Assess assess;
-@property(strong,nonatomic) NSMutableDictionary* doctorSet;
+@property(strong,nonatomic) NSMutableSet* doctorSet;
 
 @property(weak,nonatomic) id <PatientDelegate> delegate;
 
