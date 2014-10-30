@@ -14,6 +14,9 @@
 		84638B001A0017F400FC32F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84638AFF1A0017F400FC32F3 /* Images.xcassets */; };
 		84638B031A0017F400FC32F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84638B011A0017F400FC32F3 /* LaunchScreen.xib */; };
 		84638B0F1A0017F400FC32F3 /* DelegatesHomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B0E1A0017F400FC32F3 /* DelegatesHomeWorkTests.m */; };
+		84638B1D1A00184100FC32F3 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B1C1A00184100FC32F3 /* Patient.m */; };
+		84638B201A001FA900FC32F3 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B1F1A001FA900FC32F3 /* Doctor.m */; };
+		84638B231A00325D00FC32F3 /* BadDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B221A00325D00FC32F3 /* BadDoctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		84638B081A0017F400FC32F3 /* DelegatesHomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesHomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84638B0D1A0017F400FC32F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84638B0E1A0017F400FC32F3 /* DelegatesHomeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesHomeWorkTests.m; sourceTree = "<group>"; };
+		84638B1B1A00184100FC32F3 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		84638B1C1A00184100FC32F3 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		84638B1E1A001FA900FC32F3 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		84638B1F1A001FA900FC32F3 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		84638B211A00325D00FC32F3 /* BadDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadDoctor.h; sourceTree = "<group>"; };
+		84638B221A00325D00FC32F3 /* BadDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 		84638AF11A0017F400FC32F3 /* DelegatesHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				84638B1E1A001FA900FC32F3 /* Doctor.h */,
+				84638B1F1A001FA900FC32F3 /* Doctor.m */,
+				84638B211A00325D00FC32F3 /* BadDoctor.h */,
+				84638B221A00325D00FC32F3 /* BadDoctor.m */,
+				84638B1B1A00184100FC32F3 /* Patient.h */,
+				84638B1C1A00184100FC32F3 /* Patient.m */,
 				84638AF61A0017F400FC32F3 /* AppDelegate.h */,
 				84638AF71A0017F400FC32F3 /* AppDelegate.m */,
 				84638AF91A0017F400FC32F3 /* ViewController.h */,
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84638AFB1A0017F400FC32F3 /* ViewController.m in Sources */,
+				84638B1D1A00184100FC32F3 /* Patient.m in Sources */,
+				84638B231A00325D00FC32F3 /* BadDoctor.m in Sources */,
 				84638AF81A0017F400FC32F3 /* AppDelegate.m in Sources */,
 				84638AF51A0017F400FC32F3 /* main.m in Sources */,
+				84638B201A001FA900FC32F3 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
