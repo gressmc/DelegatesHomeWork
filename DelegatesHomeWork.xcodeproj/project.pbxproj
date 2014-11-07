@@ -17,6 +17,8 @@
 		84638B1D1A00184100FC32F3 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B1C1A00184100FC32F3 /* Patient.m */; };
 		84638B201A001FA900FC32F3 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B1F1A001FA900FC32F3 /* Doctor.m */; };
 		84638B231A00325D00FC32F3 /* BadDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84638B221A00325D00FC32F3 /* BadDoctor.m */; };
+		84F2FB531A030D6B00942340 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FB521A030D6B00942340 /* UIKit.framework */; };
+		84F2FB551A030D7700942340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FB541A030D7700942340 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		84638B1F1A001FA900FC32F3 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		84638B211A00325D00FC32F3 /* BadDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadDoctor.h; sourceTree = "<group>"; };
 		84638B221A00325D00FC32F3 /* BadDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadDoctor.m; sourceTree = "<group>"; };
+		84F2FB521A030D6B00942340 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84F2FB541A030D7700942340 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F2FB551A030D7700942340 /* Foundation.framework in Frameworks */,
+				84F2FB531A030D6B00942340 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,8 @@
 		84638AE61A0017F400FC32F3 = {
 			isa = PBXGroup;
 			children = (
+				84F2FB541A030D7700942340 /* Foundation.framework */,
+				84F2FB521A030D6B00942340 /* UIKit.framework */,
 				84638AF11A0017F400FC32F3 /* DelegatesHomeWork */,
 				84638B0B1A0017F400FC32F3 /* DelegatesHomeWorkTests */,
 				84638AF01A0017F400FC32F3 /* Products */,
@@ -432,6 +440,7 @@
 				84638B141A0017F400FC32F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84638B151A0017F400FC32F3 /* Build configuration list for PBXNativeTarget "DelegatesHomeWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +449,7 @@
 				84638B171A0017F400FC32F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

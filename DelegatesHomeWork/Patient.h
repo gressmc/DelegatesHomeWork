@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 gressmc. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+
 typedef enum{
     GoodDoc,
     BadDoc
